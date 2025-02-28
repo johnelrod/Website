@@ -1,3 +1,78 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Portfolio content styling */
+  .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .clipping {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 15px); /* two columns with some space between */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .clipping:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .clipping img {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    object-position:center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .clipping a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+  }
+  
+  .clipping a:hover img {
+    opacity: 0.9;
+  }
+  
+  .clipping p {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: right;
+    padding: 0 15px 15px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .portfolio-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clipping {
+      width: 80%;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #0c3352;
@@ -10,7 +85,7 @@ div{
     margin: auto;
     background-color: #0c3352;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(207, 194, 194, 0.1);
+
 }
 a {color: #ffffff(97, 14, 14)}
 a {font-size: 25;}
@@ -29,63 +104,7 @@ h2 {color: #0c3352;};
 p {line-height: 1.6; color: #0c3352;}
 p {font-size: 25;}
 h3 {color: grey};
-img{margin-top: 1000;text-align: center;}
 
-img {
-  position: absolute;
-  top: 200px; /* Adjust from top */
-  left: 30px; /* Adjust from left */
-}
-b{
-    position: absolute;
-    top: 200px; /* Adjust from top */
-    left: 180px; /* Adjust from left */
-  }
-p2{position: absolute;
-  top: 280px; /* Adjust from top */
-  left: 180px; /* Adjust from left */
-  font-size: 20}
-
-p2{ color:#ffffff;}
-
-/* Portfolio Page */ 
-.portfolio-content {
-    padding: 0px 20px;
-    text-align: center;
-}
-.clipping {
-    display:inline-block;
-    background-color: white;
-    margin: 15px;
-    border-radius: 15px;
-    padding: 10px;
-    width: 1500;
-    height: 200;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.clipping img {
-    width: 140px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.clipping h3 {
-    font-size: 1.5em;
-    color: #6B8F71;
-    position: absolute;
-   left: 170px;
-    margin-top: 0px;
-}
-
-.clipping p {
-    color: #555;
-    font-size: 1.4em;
-    margin-top: 3%;
-    position: absolute;
-    top: 300px;
-    left: 185px
-}
 
 
 
