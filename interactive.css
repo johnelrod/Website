@@ -1,0 +1,126 @@
+/* I got the styling for these from ChatGPT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* This helps make everything fit together on the page */
+  .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  /* This helps format the actual clippings*/
+  .clipping {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 15px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* This creates the little hover effect when you put your mouse over the clip */
+  .clipping:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .clipping img {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    object-position:center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .clipping a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+  }
+  
+  .clipping a:hover img {
+    opacity: 0.9;
+  }
+  
+  .clipping p {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: right;
+    padding: 0 15px 15px;
+  }
+  
+  /* This makes the clips page fit from laptop to phone better */
+  @media (max-width: 768px) {
+    .portfolio-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clipping {
+      width: 80%;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0c3352;
+    margin: 0px;
+    padding: 0%;
+}
+
+div{
+    width: 100%;
+    margin: auto;
+    background-color: #0c3352;
+    padding: 20px;
+
+}
+a {color: #ffffff(97, 14, 14)}
+a {font-size: 25;}
+a {color: #ffffff;}
+b {color: #ffffff;}
+div{text-align: center;}
+a{padding: 0px 15px;}
+
+
+h1 { color: #ffffff;}
+h1 {font-size: 40;}
+h1 {text-align: center;}
+
+
+h2 {color: #0c3352;};
+p {line-height: 1.6; color: #0c3352;}
+p {font-size: 25;}
+h3 {color: grey};
+
+
+
+
+/*phone*/
+@media (orientation: portrait){
+    #content {
+        width: 100%;
+        line-height: 1.5 em;
+        font-size: 1.5 em;
+    }}
+/*desktop*/
+#content {
+    width: 75%;
+    margin: auto;
+    line-height: 1.5 em;
+    font-size: 1.5 em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
