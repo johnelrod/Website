@@ -1,27 +1,28 @@
-/* Reset default styles for consistency */
+/* I got the styling for these from ChatGPT */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Portfolio content styling */
+  /* This helps make everything fit together on the page */
   .portfolio-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
   }
-  
+  /* This helps format the actual clippings*/
   .clipping {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    width: calc(50% - 15px); /* two columns with some space between */
+    width: calc(50% - 15px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
+  /* This creates the little hover effect when you put your mouse over the clip */
   .clipping:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -53,7 +54,7 @@
     padding: 0 15px 15px;
   }
   
-  /* Media queries for responsiveness */
+  /* This makes the clips page fit from laptop to phone better */
   @media (max-width: 768px) {
     .portfolio-content {
       flex-direction: column;
