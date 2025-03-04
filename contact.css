@@ -1,4 +1,5 @@
-body{background-color: #0c3352;
+body
+{background-color: #0c3352;
         color: white;}
         div{
             width: 100%;
@@ -24,3 +25,18 @@ body{background-color: #0c3352;
         p {font-size: 25;
         text-align: center;}
         h3 {color: grey};
+
+        @media (orientation: portrait){
+            #content {
+                width: 100%;
+                line-height: 1.5 em;
+                font-size: 1.5 em;
+            }}
+        
+        #content {
+            width: 75%;
+            margin: auto;
+            line-height: 1.5 em;
+            font-size: 1.5 em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
